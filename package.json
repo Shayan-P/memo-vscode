@@ -2,7 +2,7 @@
   "name": "memory-helper",
   "displayName": "Memory Helper",
   "description": "Helper extension to memorize and remember text snippets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ShayanPardis",
   "icon": "resources/icon.png",
   "engines": {
