@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
 			prompt: 'key:'
 		});
 
-		if (!key) return;
+		if (!key) { return; }
 
 		// Prompt for value
 		const value = await vscode.window.showInputBox({
@@ -29,7 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
 			prompt: 'value:'
 		});
 
-		if (!value) return;
+		if (!value) { return; }
 
 		// Store in memory and persistent storage
 		memoryStore.set(key, value);
@@ -50,7 +50,7 @@ export function activate(context: vscode.ExtensionContext) {
 			placeHolder: 'Select a key to remember'
 		});
 
-		if (!selected) return;
+		if (!selected) { return; }
 
 		// Copy value to clipboard
 		const value = memoryStore.get(selected);
@@ -71,7 +71,7 @@ export function activate(context: vscode.ExtensionContext) {
 			placeHolder: 'Select a key to forget'
 		});
 
-		if (!selected) return;
+		if (!selected) { return; }
 		const value = memoryStore.get(selected);
 		if (value) {
 			memoryStore.delete(selected);
