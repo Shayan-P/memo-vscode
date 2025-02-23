@@ -4,6 +4,7 @@
   "description": "Helper extension to memorize and remember text snippets",
   "version": "0.0.1",
   "publisher": "ShayanPardis",
+  "icon": "resources/icon.png",
   "engines": {
     "vscode": "^1.96.0"
   },
